@@ -57,6 +57,7 @@ After submitting your website on noBorder.tech and getting an API key, to instal
    - Configure the following settings:
      - **Title**: The title displayed to customers during checkout.
      - **API Key**: Enter your noBorder API key.
+     - **Pay Currency**: Specify the cryptocurrencies customers can use for payments.
 
 3. **Save Changes**: Click "Save changes" to apply your settings.
 
