@@ -1,12 +1,12 @@
 <?php
 
 /*
-* Plugin Name: noBorder.tech payment gateway for Easy Digital Downloads
-* description: <a href="https://noborder.tech">noBorder.tech</a> secure payment gateway for Easy Digital Downloads.
+* Plugin Name: noBorder.company payment gateway for Easy Digital Downloads
+* description: <a href="https://noborder.company">noBorder.company</a> secure payment gateway for Easy Digital Downloads.
 * Version: 1.1
-* Author: noBorder.tech
-* Author URI: https://noborder.tech
-* Author Email: info@noborder.tech
+* Author: noBorder.company
+* Author URI: https://noborder.company
+* Author Email: info@noborder.company
 * Text Domain: noborder_gf_payment_plugin
 * Tested version up to: 6.1
 * copyright (C) 2020 noborder
@@ -38,7 +38,7 @@ class EDD_noBorder_Gateway {
 		global $edd_options;
 		$gateways[$this->keyname] = array(
 			'checkout_label' =>	isset($edd_options['noborder_label'])?$edd_options['noborder_label']:'Crypto payment with noBorder',
-			'admin_label' => 'noBorder.tech'
+			'admin_label' => 'noBorder.company'
 		);
 		return $gateways;
 	}
@@ -80,7 +80,7 @@ class EDD_noBorder_Gateway {
 				'callback' => $callback,
 			);
 			
-			$ch = curl_init('https://noborder.tech/action/ws/request_create');
+			$ch = curl_init('https://noborder.company/action/ws/request_create');
 			curl_setopt($ch, CURLOPT_POST, true);
 			curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -141,7 +141,7 @@ class EDD_noBorder_Gateway {
 			'request_id' => $request_id,
 		);
 		
-		$ch = curl_init('https://noborder.tech/action/ws/request_status');
+		$ch = curl_init('https://noborder.company/action/ws/request_status');
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -177,14 +177,14 @@ class EDD_noBorder_Gateway {
 				'name' => 'API Key',
 				'type' => 'text',
 				'size' => 'regular',
-				'desc' => '<small> Enter the API key of noBorder in the above field to activate the payment gateway. You can get this key after registering your website in <a href="https://noborder.tech" target="_blank"> noBorder.tech </a></small>'
+				'desc' => '<small> Enter the API key of noBorder in the above field to activate the payment gateway. You can get this key after registering your website in <a href="https://noborder.company" target="_blank"> noBorder.company </a></small>'
 			),
 			$this->keyname . '_pay_currency' => array(
 				'id' => $this->keyname . '_pay_currency',
 				'name' => 'Selectable currencies',
 				'type' => 'text',
 				'size' => 'regular',
-				'desc' => '<small> By default, customers can pay through all <a href="https://noborder.tech/sub/process/cryptolist" target="_blank"> active crypto currencies in noBorder.tech </a>, but if you want to limit customers to pay through one or more specific crypto currencies, you can declare the name of the currency or currencies through this field. If you want to declare more than one currency, separate them with a dash. Example: bitcoin-dogecoin </small>',
+				'desc' => '<small> By default, customers can pay through all <a href="https://noborder.company/sub/process/cryptolist" target="_blank"> active crypto currencies in noBorder.company </a>, but if you want to limit customers to pay through one or more specific crypto currencies, you can declare the name of the currency or currencies through this field. If you want to declare more than one currency, separate them with a dash. Example: bitcoin-dogecoin </small>',
 			)
 		));
 	}
