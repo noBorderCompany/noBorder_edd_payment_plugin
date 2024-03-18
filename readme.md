@@ -20,9 +20,9 @@ The **noBorder Crypto Payment Gateway for Easy Digital Downloads** is a plugin t
 
 - **Plugin Name:** noBorder Crypto Payment Gateway for Easy Digital Downloads
 - **Version:** 1.1
-- **Author:** noBorder.tech
-- **Author URI:** [https://noBorder.tech](https://noBorder.tech)
-- **Author Email:** info@noBorder.tech
+- **Author:** noBorder.company
+- **Author URI:** [https://noBorder.company](https://noBorder.company)
+- **Author Email:** info@noBorder.company
 - **Text Domain:** noBorder_edd_payment_module
 - **WC tested up to:** 8.8
 - **Copyright (C):** 2020 noBorder
@@ -32,7 +32,7 @@ The **noBorder Crypto Payment Gateway for Easy Digital Downloads** is a plugin t
 
 ## Installation
 
-After submitting your website on noBorder.tech and getting an API key, to install the noBorder Crypto Payment Gateway for Easy Digital Downloads, follow these steps:
+After submitting your website on noBorder.company and getting an API key, to install the noBorder Crypto Payment Gateway for Easy Digital Downloads, follow these steps:
 
 1. **Download**: Download the plugin files.
 
@@ -86,7 +86,7 @@ If you want to contribute to this project or report issues, please visit the Git
 
 ## Troubleshooting
 
-If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for Easy Digital Downloads, please refer to the [official documentation](https://noBorder.tech) or contact our support team at [info@noBorder.tech](mailto:info@noBorder.tech).
+If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for Easy Digital Downloads, please refer to the [official documentation](https://noBorder.company) or contact our support team at [info@noBorder.company](mailto:info@noBorder.company).
 
 ---
 
@@ -98,9 +98,9 @@ This plugin is licensed under the GNU General Public License v3.0 (GPL-3.0). You
 
 ## Contact Information
 
-For inquiries, support, or assistance, please contact noBorder.tech:
-- Website: [https://noBorder.tech](https://noBorder.tech)
-- Email: [info@noBorder.tech](mailto:info@noBorder.tech)
+For inquiries, support, or assistance, please contact noBorder.company:
+- Website: [https://noBorder.company](https://noBorder.company)
+- Email: [info@noBorder.company](mailto:info@noBorder.company)
 
 ---
 
