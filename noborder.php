@@ -80,7 +80,7 @@ class EDD_noBorder_Gateway {
 				'callback' => $callback,
 			);
 			
-			$ch = curl_init('https://noborder.company/action/ws/request_create');
+			$ch = curl_init('https://noborder.company/action/ws/request/create');
 			curl_setopt($ch, CURLOPT_POST, true);
 			curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -141,7 +141,7 @@ class EDD_noBorder_Gateway {
 			'request_id' => $request_id,
 		);
 		
-		$ch = curl_init('https://noborder.company/action/ws/request_status');
+		$ch = curl_init('https://noborder.company/action/ws/request/status');
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
