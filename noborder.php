@@ -92,19 +92,10 @@ class EDD_noBorder_Gateway {
 				CURLOPT_POSTFIELDS => json_encode($params),
 			]);
 			
-			$response = curl_exec($curl);			
-			$err = curl_error($curl);
-			
-			if ($err) {
-				edd_insert_payment_note($payment, 'Gateway encountered error: ' . $err);
-				edd_update_payment_status($payment, 'failed');
-				edd_set_error('noborder_connect_error', 'Gateway encountered error.');
-				edd_send_back_to_checkout();
-				return false;
-			}
-
-			$result = json_decode($response);
+			$response = curl_exec($curl);
 			curl_close($curl);
+			
+			$result = json_decode($response);
 
 			if ($result->status == 'success') {
 				edd_insert_payment_note($payment, 'noBorder request ID : ' . $result->request_id);
@@ -161,6 +152,7 @@ class EDD_noBorder_Gateway {
 		]);
 		$response = curl_exec($curl);
 		curl_close($curl);
+		
 		$result = json_decode($response);
 
 		if ($result->status == 'success') {
